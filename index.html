@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+  <a-scene embedded arjs>
+    <a-assets>
+      <a-asset-item id="tiger" src="dog.glb"></a-asset-item>
+    </a-assets>
+    <a-marker type="pattern" url="pattern-dog.patt">
+      <a-entity gltf-model="#tiger"></a-entity>
+    </a-marker>
+      <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
