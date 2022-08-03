@@ -5,5 +5,7 @@
 
 ![dogのマーカー](pattern-dog.png)
 
+![defaultのマーカー](pattern-marker.png)
+
 - [AR.js Marker Training](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)
 - [README.mdの書き方](https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
