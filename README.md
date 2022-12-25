@@ -3,6 +3,8 @@
 
 ![index.htmlのQRコード](QR_index.png)
 
+- [kaken.html](https://igarashi-sakatakoryojp.github.io/KakenAR2022/kaken.html)
+
 ![dogのマーカー](pattern-dog.png)
 
 ![defaultのマーカー](pattern-marker.png)
