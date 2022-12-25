@@ -1,5 +1,5 @@
 # KakenAR2022
-- [index.html](https://igarashi-sakatakoryojp.github.io/KakenAR2022/)
+- [index.html](https://igarashi-sakatakoryojp.github.io/KakenAR2022/index.html)
 
 ![index.htmlのQRコード](QR_index.png)
 
