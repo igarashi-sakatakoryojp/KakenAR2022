@@ -5,129 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0,
 maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,
 target-densityDpi=device-dpi" />
-<title>Sakata Virtual Sigthseeing</title>
-    
-    <style type="text/css">
-        div.VRbutton {
-        position: fixed; bottom: 1em; left: 1em; border: 1px solid navy;
-        }
-        div.notfound {display: none;}
-    </style>
-    
-    
-    
+<title>KakenAR2022</title>
 </head>
 <body style="margin: 0px; overflow:hidden;">
  <!-- A-Frame ライブラリの読み込み -->
  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
  <!-- AR.js ライブラリの読み込み -->
  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    
  <script src="js/aframe-text-geometry-component.min.js"></script>
- 
-    
  <script src="js/aframe-extras.js"></script>
  <script src="js/aframe.min.js"></script>
 <script src="js/aframe-ar.js"></script>
+
 <script type="text/javascript" src="event5.js" charset="utf-8"></script>
-<script type="text/javascript">
-  function disp(url){
-	window.open(url, "timer", "width=600,height=400,scrollbars=yes");
-</script>
- 
-	
-	
+
  <!-- A-Frame の VR空間に AR.js を紐づける(デバッグUIを非表示) -->
- <a-scene embedded arjs="debugUIEnabled:false;">
-     
-         <a-assets>
- 	       <a-asset-item id="tree" src="tento.glb"></a-asset-item>
-        </a-assets>
- 
-  <!-- マーカーを登録(プリセットされている「hiro」マーカー) -->
-  <a-marker preset="custom" type="pattern" url='pattern-marker.patt'  id="miraini">
-  	
-   <!-- マーカーの場所に箱を置く(見やすいようにワイヤーフレーム表示) -->
-        <a-entity 
-            scale="0.02 0.02 0.02"
-            rotation="-90 0 0"
-            gltf-model="#tree">
-        </a-entity>
-  
-  </a-marker>
-  
-  <a-marker preset="custom" type="pattern" url='pattern-sakataeki.patt'  id="station">
-   <!-- マーカーの場所に箱を置く(見やすいようにワイヤーフレーム表示) -->
-        <a-entity 
-            scale="0.02 0.02 0.02"
-            rotation="-90 0 0"
-            gltf-model="#tree">
-        </a-entity>
-  
-  </a-marker>
-  
-    <a-marker preset="custom" type="pattern" url='pattern-Cityhall.patt'  id="siyakusyo">
-   <!-- マーカーの場所に箱を置く(見やすいようにワイヤーフレーム表示) -->
-        <a-entity 
-            scale="0.02 0.02 0.02"
-            rotation="-90 0 0"
-            gltf-model="#tree">
-        </a-entity>
-  
-  </a-marker>
-  
-    <a-marker preset="custom" type="pattern" url='pattern-koryo.patt'  id="koryo">
-   <!-- マーカーの場所に箱を置く(見やすいようにワイヤーフレーム表示) -->
-        <a-entity 
-            scale="0.02 0.02 0.02"
-            rotation="-90 0 0"
-            gltf-model="#tree">
-        </a-entity>
-  
-  </a-marker>
-  
-    <a-marker preset="custom" type="pattern" url='pattern-sankyo.patt'  id="sankyo">
-   <!-- マーカーの場所に箱を置く(見やすいようにワイヤーフレーム表示) -->
-        <a-entity 
-            scale="0.02 0.02 0.02"
-            rotation="-90 0 0"
-            gltf-model="#tree">
-        </a-entity>
-  
-  </a-marker>
+ <a-scene embedded arjs="debugUIEnabled:false;">  
   
   <!-- AR用のカメラを置く -->
   <a-entity camera></a-entity>
   
  </a-scene>
- 
-	
-    
+   
     <div id="vr-miraini" class="VRbutton notfound">
- 
         <button style="width : 160px;height : 50px;font-size:30px;" onclick="">Web</button>
         <button style="width : 160px;height : 50px;font-size:30px;" onclick="">View</button>
     </div>
     
-    <div id="vr-station" class="VRbutton notfound">
-        <button style="width : 160px;height : 50px;font-size:30px;" onclick="location.href='https://www.jreast.co.jp/estation/stations/728.html'">Web</button>
-        <button style="width : 160px;height : 50px;font-size:30px;" onclick="location.href='https://www.yatex.org/gitbucket/SakataKoryo2021/renshu/pages/ryohei/SAKATAstationView.html'">View</button>
-    </div>
-    
-    <div id="vr-siyakusyo" class="VRbutton notfound">
-        <button style="width : 160px;height : 50px;font-size:30px;" onclick="location.href='http://www.city.sakata.lg.jp/'">Web</button>
-        <button style="width : 160px;height : 50px;font-size:30px;" onclick="location.href='https://www.yatex.org/gitbucket/SakataKoryo2021/renshu/pages/ryohei/CityhallView.html'">View</button>
-    </div>
-    
-    <div id="vr-sankyo" class="VRbutton notfound">
-        <button style="width : 160px;height : 50px;font-size:30px;" onclick="location.href='https://sakata-kankou.com/spot/30159'">Web</button>
-        <button style="width : 160px;height : 50px;font-size:30px;" onclick="location.href='https://www.yatex.org/gitbucket/SakataKoryo2021/renshu/pages/ryohei/SANKYOView.html'">View</button>
-    </div>
-    
-    <div id="vr-koryo" class="VRbutton notfound">
-        <button style="width : 160px;height : 50px;font-size:30px;" onclick="location.href='https://www.sakatakoryo-h.ed.jp'">Web</button>
-        <button style="width : 160px;height : 50px;font-size:30px;" onclick="location.href='https://www.yatex.org/gitbucket/SakataKoryo2021/renshu/pages/ryohei/SAKATAKORYOView.html'">View</button>
-    </div>
- 
 </body>
 </html>
