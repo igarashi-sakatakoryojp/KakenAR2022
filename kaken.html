@@ -19,6 +19,13 @@ target-densityDpi=device-dpi" />
 
 <script type="text/javascript" src="event5.js" charset="utf-8"></script>
 
+ <script>
+      var name = prompt("名前を入力してください");
+      document.write(name);
+</script>
+ 
+
+
  <!-- A-Frame の VR空間に AR.js を紐づける(デバッグUIを非表示) -->
  <a-scene embedded arjs="debugUIEnabled:false;">  
   
@@ -32,10 +39,5 @@ target-densityDpi=device-dpi" />
         <button style="width : 160px;height : 50px;font-size:30px;" onclick="">View</button>
     </div>
 
-<script>
-      var name = prompt("名前を入力してください");
-      document.write(name);
-</script>
- 
 </body>
 </html>
