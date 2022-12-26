@@ -29,6 +29,8 @@ target-densityDpi=device-dpi" />
  <script src="js/aframe-extras.js"></script>
  <script src="js/aframe.min.js"></script>
 <script src="js/aframe-ar.js"></script>
+ <script type="text/javascript" src="event5.js" charset="utf-8">
+ </script>
 <script type="text/javascript">
   function disp(url){
 	window.open(url, "timer", "width=600,height=400,scrollbars=yes");
@@ -40,6 +42,7 @@ target-densityDpi=device-dpi" />
  <a-scene embedded arjs="debugUIEnabled:false;">
      
          <a-assets>
+ 	       <a-asset-item id="tree" src="tento.glb"></a-asset-item>
         </a-assets>
  
   <!-- マーカーを登録(プリセットされている「hiro」マーカー) -->
@@ -99,8 +102,6 @@ target-densityDpi=device-dpi" />
   
  </a-scene>
  
- <script type="text/javascript" src="event5.js" charset="utf-8">
- </script>
     
     <div id="vr-miraini" class="VRbutton notfound">
  
