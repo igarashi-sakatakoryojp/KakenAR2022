@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>サイトタイトル</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ディスクリプション">
+<link rel="stylesheet" href="./assets/css/reset.css">
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+</script>
+
+</head>
+<body>
+
+<button id=”small-btn”>小</button>
+ 
+<button id=”middle-btn”>中</button>
+ 
+<button id=”big-btn”>大</button>
+ 
+<p class=”textbox”>本文</p>
+
+<script>
+
+$(function() {
+ 
+$("#small-btn").click(function() {
+ 
+$(".textbox").css("font-size", "12px");
+ 
+});
+ 
+$("#middle-btn").click(function() {
+ 
+$(".textbox").css("font-size", "24px");
+ 
+});
+ 
+$("#big-btn").click(function() {
+ 
+$(".textbox").css("font-size", "50px");
+ 
+});
+ 
+});
+
+</script>
+
+</body>
+</html>
